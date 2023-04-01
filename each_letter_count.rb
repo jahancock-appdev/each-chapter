@@ -5,3 +5,10 @@
 # Look in the github README file for example output
 
 p "Enter a word:"
+input_word = gets.chomp
+input_letters = input_word.downcase.split("")
+
+input_letters.each do |letter|
+  n_times = input_letters.count(letter)
+  p "#{letter} appears #{n_times} times"
+end

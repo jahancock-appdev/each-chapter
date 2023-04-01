@@ -5,3 +5,9 @@
 
 p "Enter a word for me to spell:"
 
+input_word = gets.chomp
+input_letters = input_word.upcase.split("")
+
+input_letters.each do |letter|
+  p letter
+end
